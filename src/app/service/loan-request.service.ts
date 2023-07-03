@@ -8,15 +8,15 @@ export class LoanRequestService {
   private usersUrl! : string;
   
   constructor(private http: HttpClient) {
-    this.usersUrl = 'http://localhost:8080/users';
+    this.usersUrl = 'http://localhost:8080/api/v1.0/loanRequest';
 
    }
 
    public findAll(): Observable<LoanRequest[]> {
-    return this.http.get<LoanRequest[]>(this.usersUrl);
+    return this.http.get<LoanRequest[]>(this.usersUrl + "/");
   }
 
   public save(user: LoanRequest) {
-    return this.http.post<LoanRequest>(this.usersUrl, user);
+    return this.http.post<LoanRequest>(this.usersUrl + "/", user);
 }
 }

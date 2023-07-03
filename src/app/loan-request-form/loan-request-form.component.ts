@@ -14,7 +14,7 @@ export class LoanRequestFormComponent {
   tenure!: number;
   salary! : number ;
   description! : string ;
-  userId! : string;
+  userId! : number;
   status! : string ;
 
   userData! : LoanRequest;

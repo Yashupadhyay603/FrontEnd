@@ -1,6 +1,6 @@
 export class LoanRequest {
     
-        userId! : string;
+        userId! : number;
         description! : string;
         amount! : number;
         tenure! : number;

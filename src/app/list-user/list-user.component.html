@@ -13,20 +13,20 @@
         </thead>
         <tbody>
           <tr *ngFor="let user of loanReq">
-            <td>{{ user.userId}}</td>
+            <!-- <td>{{ user.userId}}</td> -->
             <td>{{ user.description }}</td>
             <!-- <td><a href="mailto:{{ user.email }}">{{ user.email }}</a></td> -->
             <td>{{user.amount}}</td>
             <td>{{user.tenure}}</td>
             <td>{{user.salary}}</td>
             <td>{{user.status}}</td>
-            <td>
+            <!-- <td> -->
               <!-- <div>
                 <button type="button" (click)=updateData() class="btn btn-secondary btn-sm">Update</button>
                 <button type="button" (click)=deleteData(user) class="btn btn-danger btn-sm">Delete</button> -->
                 <!-- <button type="button" class="btn btn-success btn-sm">Success</button> -->
               <!-- </div> -->
-            </td>
+            <!-- </td> -->
           </tr>
         </tbody>
       </table>
